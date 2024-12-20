@@ -68,25 +68,21 @@ const Hero: FC = () => {
         <div className="absolute top-0 left-0 w-full h-full">
           <div className="mt-24 px-5 sm:px-10">
             <h1 className="special-font hero-heading text-blue-100">
-              REDEFI<b>N</b>E
+              Porch<b>e</b>911
             </h1>
             <p className="mb-5 max-w-lg text-blue-100 font-medium text-lg">
-              Enter the Metagame Layer <br /> Unleash the Play Economy
+            Sleek and timeless, the Porsche 911<br/> embodies unparalleled performance.
             </p>
             <a href="https://www.youtube.com/watch?v=x1_-btXPWpc" target="_blank" rel="noopener noreferrer">
               <Button
                 id="watch-trailer"
                 title="Watch trailer"
                 leftIcon={<TiLocationArrow />}
-                containerClass="bg-red-900 flex-center gap-1"
+                containerClass="bg-red-800 flex-center gap-1"
               />
             </a>
           </div>
         </div>
-
-        <h1 className="special-font hero-heading absolute bottom-5 right-5 text-blue-200">
-          G<b>A</b>MING
-        </h1>
       </div>
     </div>
   );

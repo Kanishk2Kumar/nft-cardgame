@@ -7,7 +7,7 @@ import clsx from "clsx";
 import { useWindowScroll } from "react-use";
 import gsap from "gsap";
 
-const navItems = ["Home", "P-2-P", "VS - AI ","Market Place"];
+const navItems = ["Home", "P-2-P", "VS-AI ","Market-Place"];
 
 const Navbar: React.FC = () => {
   const [isAudioPlaying, setIsAudioPlaying] = useState<boolean>(false);
@@ -65,16 +65,16 @@ const Navbar: React.FC = () => {
         <nav className="flex size-full items-center justify-between p-4">
           <div className="flex items-center gap-7">
             <img
-              src="/HyperDriveLogo.png"
+              src="/Logo.png"
               alt="logo"
-              height={100}
-              width={80}
+              height={60}
+              width={60}
             />
             <Button
               id="product-button"
               title="Products"
               rightIcon={<TiLocationArrow />}
-              containerClass="bg-red-900 text-white md:flex hidden items-center justify-center gap-1"
+              containerClass="bg-red-800 text-white md:flex hidden items-center justify-center gap-1"
             />
           </div>
 
@@ -83,7 +83,7 @@ const Navbar: React.FC = () => {
               {navItems.map((item, index) => (
                 <a
                   key={index}
-                  href={`#${item.toLowerCase()}`}
+                  href={`/${item}`}
                   className="nav-hover-btn transition-colors duration-300"
                 >
                   {item}
